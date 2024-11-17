@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: gray;
+    }
+
+    .table-container {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .shaded {
+        background-color: lightgray;
+    }
+
+    td {
+        border-bottom: none;
+        border-top: none;
+    }
+
+</style>
+<body>
+    <div class="table-container">
+        <!--Account Table-->
+        <div class="account">
+            <table style="width: 200px;">
+                <tr>
+                    <th colspan="3">account</th>
+                </tr>
+                <tr>
+                    <td class="bold">PK</th>
+                    <td class="bold">accountID</td>
+                    <td>int</td>
+                </tr>
+                <tr class="shaded">
+                    <td></td>
+                    <td class="bold">username</td>
+                    <td>varchar</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="bold">password</td>
+                    <td>varchar</td>
+                </tr>
+            </table>
+
+        <div class="photo">
+            <table width="185px">
+                <tr>
+                    <th colspan="3">photo</th>
+                </tr>
+                <tr>
+                    <td class="bold">PK</td>
+                    <td class="bold">photoID</td>
+                    <td>int</td>
+                </tr>
+                <tr class="shaded">
+                    <td></td>
+                    <td>data</td>
+                    <td style="border-top: 1px solid black;">varchar</td>
+                </tr>
+            </table>
+
+            <div class="account_photo">
+                <table width="185px">
+                    <tr>
+                        <th colspan="3">account_photo</th>
+                    </tr>
+                    <tr>
+                        <td class="bold">FK</td>
+                        <td class="bold">accountID</td>
+                        <td>int</td>
+                    </tr>
+                    <tr class="shaded">
+                        <td class="bold">FK</td>
+                        <td class="bold">photoID</td>
+                        <td>int</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
