@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Image Styling with Hover</title>
+    <style>
+        /* Style for the Image */
+        img {
+            border: 5px solid red; /* Add a red border with size 5px */
+            transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Hover Effect for the Image */
+        img:hover {
+            transform: scale(1.1); /* Enlarge the image slightly on hover */
+            border-color: blue; /* Change border color to blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Styling with Hover Effect</h1>
+    <!-- Image Element -->
+    <img src="path-to-your-image.jpg" alt="Decorated Image" width="300" height="300">
+</body>
+</html>

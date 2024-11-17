@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9: Styled Table</title>
+    <style>
+        /* Style for the table */
+        table {
+            width: 50%; /* Set table width to 50% of the page */
+            border-collapse: collapse; /* Merge borders into single lines */
+            margin: 20px auto; /* Center the table */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header row styling */
+        th {
+            background-color: #003366; /* Dark blue background */
+            color: white; /* White text */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Table body row styling */
+        td {
+            background-color: #f2f2f2; /* Light gray background */
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd; /* Light gray borders */
+        }
+
+        /* Alternating row colors */
+        tr:nth-child(even) td {
+            background-color: #d9e3f0; /* Light blue background for even rows */
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #f2f2f2; /* Default light gray background */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Subjects Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>ECTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Math</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
